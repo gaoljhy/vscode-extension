@@ -1,9 +1,9 @@
-# vscode-extension
+# vscode-MyTranslation
 
 
 <p align="center">"<i>NOthing or Everything</i>"</p>
 
-<h4 align="center">一些自己制作的vscode插件</h4>
+<h4 align="center">一个简单的划词翻译插件</h4>
 
 <br>
 
@@ -32,11 +32,19 @@
 
 <br>
 
+
+## 使用:
+
+> Settings
+
+> translation.api  google-cn
+
+> Commands translate
+
 ## Contributor && PR
 
 感谢为此项目作出贡献的Contributor，没有大家的贡献，就没有现在的项目进展，我们一起成长，共同实现。
 
-详情参考 [CONTRIBUTOR](./CONTRUIBUTOR.md)
 
 ### Pull Request
 
@@ -49,16 +57,3 @@
 > QR CODE
 
 ![wechat](https://github.com/gaoljhy/vscode-extension/blob/master/WechatIMG.jpeg)
-
-## TODO
-
-- [ ] 自定义代码片段 插件
-
-- [ ] 翻译 插件
-
-- [ ] 定时 插件
-
-- [ ] 代码数量统计 插件
-
-- [ ] TODO List 插件
-
