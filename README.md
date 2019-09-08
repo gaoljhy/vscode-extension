@@ -1,6 +1,5 @@
 # vscode-extension
 
-
 <p align="center">"<i>NOthing or Everything</i>"</p>
 
 <h4 align="center">一些自己制作的vscode插件</h4>
