@@ -31,14 +31,15 @@
     既然是编辑器相关的命令，那么肯定需要能够访问到编辑器，以及其中的内容。
     1. 首先我们要获取的就是：当前工作区内，用户正在使用的编辑器。
         `let editor = vscode.window.activeTextEditor;`
-    
+
     > editor 这个变量并非一定总是有效的值，比如用户现在并没有打开任何文件，编辑器是空的，那么此时 editor 的值就是 `undefined`。
     > 在正式使用 `editor` 之前，要判断一下，`editor` 是否为 undefined，是的话就结束命令的运行。
-        ```js
+
+    ```js
         if (!editor) {
             return;
         }
-        ```
+    ```
 
 ## VSCode 插件开发编辑器命令
 
@@ -61,20 +62,20 @@
 
 1. 读取的信息就是当前的文档信息和主光标的信息。
 
-```js
-let document = editor.document;
-let selection = editor.selection;
-```
+    ```js
+    let document = editor.document;
+    let selection = editor.selection;
+    ```
 
 2. 读取光标选中的内容
 
-`let text = document.getText(selection);`
+    `let text = document.getText(selection);`
 
-> `getText`，以获取某段代码。
+    > `getText`，以获取某段代码。
 
 3. 接下来就是将这段文本进行反转了，可以写一个非常简单的版本，将字符串分割成字母数组，然后反转，最后重新组合成字符串。
 
-`let result = text.split('').reverse().join('');`
+    `let result = text.split('').reverse().join('');`
 
 4. 最后一步操作就是将原来编辑器内的文本进行替换了。
 
@@ -92,6 +93,8 @@ let selection = editor.selection;
 `editBuilder.replace(selection, result);`
 
 > 将原先的 selection 里的内容，替换成新的 result 即可。
+
+-----------
 
 ## 注意事项
 
