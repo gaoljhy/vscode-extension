@@ -1,8 +1,5 @@
 # mytranslate
 
-
-# gpack
-
 <p align="center">"<i>NOthing or Everything</i>"</p>
 
 <h4 align="center">一个自己用的vscode 翻译插件</h4>

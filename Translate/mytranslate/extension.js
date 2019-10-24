@@ -12,16 +12,19 @@ function activate(context) {
 
 	// console.log('Congratulations, your extension "mytranslate" is now active!');
 
-	let editor = vscode.window.activeTextEditor;
-	let document = editor.document;
-	let selection = editor.selection;
+	
 	
 	let disposable = vscode.commands.registerCommand('extension.myTranslate', function () {
 
+		let editor = vscode.window.activeTextEditor;
+		let document = editor.document;
+		let selection = editor.selection;
 		let text = document.getText(selection);
 		
 		dotran.doTran(text,vscode.window.showInformationMessage, "auto", "zh-CN");
-		
+		editor = null;
+		document = null ;
+		selection = null ;
 		
 
 	});
@@ -30,7 +33,8 @@ function activate(context) {
 }
 exports.activate = activate;
 
-function deactivate() {}
+function deactivate() {
+}
 
 module.exports = {
 	activate,
