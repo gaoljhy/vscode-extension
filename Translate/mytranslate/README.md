@@ -49,7 +49,7 @@
 
 > QR CODE
 
-![wechat](https://github.com/gaoljhy/gpack/blob/master/WechatIMG.jpeg)
+![wechat](https://github.com/gaoljhy/gpack/blob/master/WechatIMG.jpeg?raw=true)
 
 
 ## Usage
