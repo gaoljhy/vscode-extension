@@ -1,0 +1,26 @@
+{
+    "name": "mysnipest",
+    "displayName": "mySnipest",
+    "description": "my snipest",
+    "publisher": "adman",
+	"icon": "icon.jpg",
+    "version": "0.4.2",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "c",
+                "path": "./snippets/c.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/markdown.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "main": {
+		"prefix": "main",
+		"body": [
+            "int main(void)",
+            "{",
+            "     return 0;",
+            "}"
+		],
+		"description": "main Major"
+      },
+      "define": {
+		"prefix": "define",
+		"body": [
+            "#ifndef ${1:FILE_H}",
+            "#define ${2:DEFINE_CONETXT} ${3:DEFINED_CONETXT}",
+            "#endif ${1:FILE_H}"
+		],
+		"description": "a define struct"
+	}
+}
